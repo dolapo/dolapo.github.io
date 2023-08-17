@@ -25,6 +25,10 @@
     * {
       box-sizing: border-box
     }
+
+    li {
+      line-height: 1.5;
+    }
   </style>
 
   <script>
@@ -73,12 +77,15 @@
       <li><span onClick=locationReplaceTimeout("around://r/7hxhiruf?s=c") class="clicky">js location replace
           (timeout)</span>
       </li>
+      <li><button onclick="locationReplace('around://r/7hxhiruf?s=c')">js location replace (button)</button></li>
       <li><span onClick=locationAssign("around://r/7hxhiruf?s=c") class="clicky">js location assign</span></li>
       <li><span onClick=locationAssignTimeout("around://r/7hxhiruf?s=c") class="clicky">js location assign
           (timeout)</span></li>
+      <li><button onclick="locationAssign('around://r/7hxhiruf?s=c')">js location assign (button)</button></li>
 
       <li><span onClick=locationHRef("around://r/7hxhiruf?s=c") class="clicky">js location href</span></li>
       <li><span onClick=locationHRefTimeout("around://r/7hxhiruf?s=c") class="clicky">js location href (timeout)</span>
+      <li><button onclick="locationHRef('around://r/7hxhiruf?s=c')">js location href (button)</button></li>
       </li>
     </ul>
   </div>
