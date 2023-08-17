@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>ext protocol test links (hi friend)</title>
+  <style>
+    body,
+    html {
+      padding: 10px;
+      margin: 0;
+      background-color: #eee;
+      font-family: Quicksand, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+    }
+
+    a,
+    a:visited {
+      color: #888;
+      text-decoration: underline
+    }
+
+    .clicky {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+  </style>
+
+  <script>
+    function locationReplace(link) { window.location.replace(link) }
+    function locationAssign(link) { window.location.assign(link) }
+    function locationHRef(link) { window.location.href = link }
+  </script>
+</head>
+
+<body>
+  <div>
+    <h2>Slack</h2>
+    <ul>
+      <li><a href="https://thebrowsercompany.slack.com/archives/C01A4S7L5SB/p1692126406885249">regular
+          link</a></li>
+      <li><span onClick=locationReplace("https://thebrowsercompany.slack.com/archives/C01A4S7L5SB/p1692126406885249")
+          class="clicky">js location replace</span></li>
+      <li><span onClick=locationAssign("https://thebrowsercompany.slack.com/archives/C01A4S7L5SB/p1692126406885249")
+          class="clicky">js location assign</span></li>
+      <li><span onClick=locationHRef("https://thebrowsercompany.slack.com/archives/C01A4S7L5SB/p1692126406885249")
+          class="clicky">js location href</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Around</h2>
+    <ul>
+      <li><a href="https://around.co/r/7hxhiruf?s=c">regular link</a></li>
+      <li><span onClick=locationReplace("https://around.co/r/7hxhiruf?s=c") class="clicky">js location replace</span>
+      </li>
+      <li><span onClick=locationAssign("https://around.co/r/7hxhiruf?s=c") class="clicky">js location assign</span></li>
+      <li><span onClick=locationHRef("https://around.co/r/7hxhiruf?s=c") class="clicky">js location href</span></li>
+    </ul>
+  </div>
+</body>
+
+</html>
